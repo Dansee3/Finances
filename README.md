@@ -1,1 +1,2 @@
-1) added Frontend Project
+1) added Frontend Projectgit checkout main
+git pull origin main
