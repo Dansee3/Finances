@@ -1,7 +1,7 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-
 import Logo from './Logo';
+
 const navListLeft = [
   { name: 'Finanse', path: '/Finanse/' },
   { name: 'Zakupy', path: '/Zakupy' },
@@ -15,7 +15,7 @@ const NavLeft = () => {
   const menuLeft = navListLeft.map(({ name, path }, index) => (
     <li
       key={index}
-      className={'navLeft w-full h-24 last:bottom-0 last:mt-[7rem] '}
+      className="navLeft w-full h-24 last:bottom-0 last:mt-[7rem]"
     >
       <NavLink
         to={path}
@@ -32,7 +32,7 @@ const NavLeft = () => {
 
   return (
     <div className="h-screen sticky top-0 text-center bg-slate-800 rounded-br-sm rounded-tl-[8rem] rounded-tr-[8rem] nav-border-y">
-      <Logo />
+      <Logo navBord={true} shad={'logo'}/>
       <nav>
         <ul>{menuLeft}</ul>
       </nav>

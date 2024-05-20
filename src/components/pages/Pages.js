@@ -8,22 +8,18 @@ import Paragony from './Paragony/Paragony';
 import Tralalala from './Tralalala/Tralalala';
 import BrygadaSiema from './BrygadaSiema/BrygadaSiema';
 
-
 import NotFound from '../NotFound';
-import Loading from '../Loading';
+
 
 const Pages = () => {
-  
-
   return (
     <Routes>
-      <Route path="/" element={<Navigate to='/Finanse/Statystyki' />} />
+      <Route path="/" element={<Navigate to="/Finanse/Statystyki" />} />
       <Route path="/Finanse/*" element={<Finanse />} />
-      <Route path="/Zakupy/*" element={<Zakupy />} /> 
+      <Route path="/Zakupy/*" element={<Zakupy />} />
       <Route path="/Paragony/*" element={<Paragony />} />
       <Route path="/Tralalala/*" element={<Tralalala />} />
       <Route path="/BrygadaSiema/*" element={<BrygadaSiema />} />
-
       <Route path="*" element={<NotFound />} />
     </Routes>
   );
